@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Beranda</title>
+
+    <style>
+        :root {
+            --primary-color: #1d3c6a;
+            --secondary-color: #6a8caf;
+            --accent-color: #4a6984;
+            --light-bg: #f8fafd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+        .navbar {
+            background-color: #537895 !important;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: 700;
+            border-bottom: 2px solid white;
+        }
+        .hero-title {
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 2.8rem;
+        }
+        .hero-subtitle {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+        .video-container {
+            border: 3px solid var(--secondary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .bph-card {
+            border: none;
+            border-radius: 15px;
+            background: #6f86a5;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .bph-card:hover {
+            transform: translateY(-5px);
+        }
+        .bph-card img {
+            border-radius: 15px 15px 0 0;
+            background-color: #e2e8f0;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .bph-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        .bph-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .btn-dept {
+            background: linear-gradient(135deg, #a1b8d2, #34547a);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            width: 100%;
+            transition: all 0.3s;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+        .btn-dept:hover {
+            background: linear-gradient(135deg, #34547a, #1d3c6a);
+            color: white;
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        footer {
+            background: linear-gradient(to bottom, transparent, #e2ebd5);
+            padding: 2rem 0;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#section-departemen">Departemen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sewa.html">Sewa Barang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-5 text-center text-lg-start">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 order-2 order-lg-1">
+                <div class="mb-3">
+                    <span class="badge bg-secondary p-2">UNIVERSITAS LAMBUNG MANGKURAT</span>
+                </div>
+                <h1 class="hero-title mb-2">UKM PP FIM ULM</h1>
+                <h5 class="hero-subtitle mb-3">Pengembangan Penalaran dan Forum Inovasi Mahasiswa</h5>
+                <p class="lead text-muted" style="font-size: 1rem; line-height: 1.6;">
+                    Unit Kegiatan Mahasiswa (UKM) Universitas Lambung Mangkurat yang berfokus pada pengembangan kepenulisan, penalaran, dan penelitian mahasiswa.
+                </p>
+            </div>
+            <div class="col-lg-5 text-center order-1 order-lg-2">
+                <img src="asset/Logo FIM.png" alt="Logo UKM PP FIM ULM" class="img-fluid" style="max-height: 220px;">
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5 text-center">
+        <h2 class="section-title">PROFIL PP FIM ULM</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="video-container ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/fOYjNWzIx9Q" title="Video Profile" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 text-center">
+        <h2 class="section-title mb-1">KABINET RENASCENTIA</h2>
+        <div class="d-flex justify-content-center mb-5">
+            <div style="width: 60px; height: 3px; background-color: var(--secondary-color);"></div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card bph-card shadow-sm h-100">
+                    <img src="asset/Dina Hilyati.jpeg" class="card-img-top" alt="Ketua Umum">
+                    <div class="card-body py-3">
+                        <div class="bph-title mb-1">Ketua Umum</div>
+                        <div class="bph-name">Dina Hilyati</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card bph-card shadow-sm h-100">
+                    <img src="asset/Intan Noraini waketum 1.jpeg" class="card-img-top" alt="Waketum 1">
+                    <div class="card-body py-3">
+                        <div class="bph-title mb-1">Waketum 1</div>
+                        <div class="bph-name">Intan Noraini</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-departemen" class="container my-5 text-center">
+        <h2 class="section-title">DEPARTEMEN</h2>
+        
+        <div class="row g-3 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="sc.html" class="btn-dept">STEERING COMMITTEE (SC)</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="hrd.html" class="btn-dept">HUMAN RESOURCE DEVELOPMENT</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="keilmiahan.html" class="btn-dept">KEILMIAHAN</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="kestari.html" class="btn-dept">KESEKRETARIATAN DAN PENGARSIPAN</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="kwu.html" class="btn-dept">KEWIRAUSAHAAN</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="kominfo.html" class="btn-dept">KOMUNIKASI DAN INFORMASI</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p class="mb-3 text-muted" style="font-size: 0.9rem; font-weight: 600;">Media Sosial UKM PP FIM ULM</p>
+            <div class="social-icons mb-3">
+                <a href="https://www.instagram.com/inovasi_ulm/" class="social-instagram" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.tiktok.com/@inovasi_ulm" class="social-tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ukmppfimulm" class="social-youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/100064884186241" class="social-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <small class="text-muted">&copy; 2026 Kominfo PP FIM ULM. All Rights Reserved.</small>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

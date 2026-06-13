@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Human Resource Development (HRD) - UKM PP FIM ULM</title>
+
+    <style>
+        :root {
+            --primary-color: #1d3c6a;
+            --secondary-color: #6a8caf;
+            --accent-color: #4a6984;
+            --light-bg: #f8fafd;
+            --card-bg: #6f86a5;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+        .navbar {
+            background-color: #537895 !important;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: 700;
+            border-bottom: 2px solid white;
+        }
+        .page-title {
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 3rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+        .role-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .bph-card {
+            border: none;
+            border-radius: 20px;
+            background-color: var(--card-bg);
+            color: white;
+            transition: transform 0.3s;
+            overflow: hidden;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .bph-card:hover {
+            transform: translateY(-5px);
+        }
+        .bph-card img {
+            border-radius: 20px 20px 0 0;
+            background-color: #e2e8f0;
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .bph-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .member-list-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn-member {
+            background: linear-gradient(135deg, #a1b8d2, #34547a);
+            color: white;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            pointer-events: none;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#section-departemen">Departemen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sewa.html">Sewa Barang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container px-4 text-center mb-5">
+        <div class="text-start mx-auto" style="max-width: 600px;">
+            <h1 class="page-title">Kesektariatan<br>dan Pengarsipan<br>(Kestari)</h1>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-12">
+                <div class="role-title">Kepala Departemen</div>
+                <div class="card bph-card shadow-sm">
+                    <img src="asset/Wafa.JPG" class="card-img-top" alt="Kepala Departemen HRD">
+                    <div class="card-body py-3">
+                        <div class="bph-name">Wafa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-list-section">
+            <div class="role-title mb-3">Anggota</div>
+            
+            <div class="d-flex flex-column gap-3">
+                <div class="btn-member">Amalia Soraya</div>
+                <div class="btn-member">Siti Raidiyah</div>
+                <div class="btn-member">Nadia</div>
+                <div class="btn-member">Mawardah</div>
+                <div class="btn-member">Alif'fa Nur Adya</div>
+                <div class="btn-member">Adelia Hayatuzzahra</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p class="mb-3 text-muted" style="font-size: 0.9rem; font-weight: 600;">Media Sosial UKM PP FIM ULM</p>
+            <div class="social-icons mb-3">
+                <a href="https://www.instagram.com/inovasi_ulm/" class="social-instagram" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.tiktok.com/@inovasi_ulm" class="social-tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ukmppfimulm" class="social-youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/100064884186241" class="social-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <small class="text-muted">&copy; 2026 Kominfo PP FIM ULM. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
